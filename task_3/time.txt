@@ -1,0 +1,14 @@
+shm:
+200b - 0,006 ms
+4kb - 0,060 ms
+4mb - 80 ms
+
+msg:
+200b - 0,020 ms
+4kb - 0,400 ms
+4mb - 1550 ms
+
+fifo:
+200b - 0,019 ms
+4kb - 0,350 ms
+4mb - 1624 ms
