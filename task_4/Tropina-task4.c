@@ -36,8 +36,9 @@ void *calculate(void * annoy)
 
     for(i=0; i < limit->count; i++)
     {
-        x = limit->a + (double)(limit->b - limit->a)*rand()/RAND_MAX;
-        y = (double)M*rand()/RAND_MAX;
+        int r1, r2;
+        x = limit->a + (double)(limit->b - limit->a)*rand_r(&r1)/RAND_MAX;
+        y = (double)M*rand_r(&r2)/RAND_MAX;
 
         if(y<func(x))
             hit++;
